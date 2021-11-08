@@ -1,0 +1,178 @@
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mk_dir
+bash: mk_dir: command not found
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mk dir
+bash: mk: command not found
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mkdir project_dir
+
+bimahesh@LIN33005302 MINGW64 ~
+$ cd project_dir
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir
+$ git init
+Initialized empty Git repository in C:/Users/bimahesh/project_dir/.git/
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git commit -m "commiting html file"
+[master (root-commit) a9d85cd] commiting html file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git commit -m "recommit index"
+[master 58d82d8] recommit index
+ 2 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git log
+commit 58d82d892d7a37e83529104390c439759225786c (HEAD -> master)
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:02:54 2021 +0530
+
+    recommit index
+
+commit a9d85cd0dbc9a54b5947614738582c9558d1b027
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 19:23:10 2021 +0530
+
+    commiting html file
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git checkout -- .
+Updated 1 path from the index
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git log
+commit 58d82d892d7a37e83529104390c439759225786c (HEAD -> master)
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:02:54 2021 +0530
+
+    recommit index
+
+commit a9d85cd0dbc9a54b5947614738582c9558d1b027
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 19:23:10 2021 +0530
+
+    commiting html file
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git checkout -- .
+Updated 1 path from the index
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git reset 
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git config alias.my-add add
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git my-add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git commit -m"last commit"
+[master aafb5cf] last commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git log
+commit aafb5cf56b30fb94570b1581471e8d105bc9d561 (HEAD -> master)
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:16:59 2021 +0530
+
+    last commit
+
+commit 58d82d892d7a37e83529104390c439759225786c
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:02:54 2021 +0530
+
+    recommit index
+
+commit a9d85cd0dbc9a54b5947614738582c9558d1b027
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 19:23:10 2021 +0530
+
+    commiting html file
+
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git revert aafb5cf56b30fb94570b1581471e8d105bc9d561
+[master ae6f44b] Revert "last commit"
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+

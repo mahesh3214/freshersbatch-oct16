@@ -1,0 +1,579 @@
+bimahesh@LIN33005302 MINGW64 ~
+$ mkdir
+mkdir: missing operand
+Try 'mkdir --help' for more information.
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mk_dir
+bash: mk_dir: command not found
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mk dir
+bash: mk: command not found
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mkdir project_dir
+
+bimahesh@LIN33005302 MINGW64 ~
+$ cd project_dir
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir
+$ git init
+Initialized empty Git repository in C:/Users/bimahesh/project_dir/.git/
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git commit -m "commiting html file"
+[master (root-commit) a9d85cd] commiting html file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git rm--cached info.txt
+git: 'rm--cached' is not a git command. See 'git --help'.
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info1.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+        new file:   info1.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git .gitignore
+git: '.gitignore' is not a git command. See 'git --help'.
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ clear^C
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ vi .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info.txt
+v
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ vi info.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+warning: LF will be replaced by CRLF in info.txt.
+The file will have its original line endings in your working directory
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ vi .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git  status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   info.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git rm -rf --cached .
+rm '.gitignore'
+rm 'index.html'
+rm 'info.txt'
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git commit -m "recommit index"
+[master 58d82d8] recommit index
+ 2 files changed, 3 insertions(+)
+ create mode 100644 .gitignore
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git log
+commit 58d82d892d7a37e83529104390c439759225786c (HEAD -> master)
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:02:54 2021 +0530
+
+    recommit index
+
+commit a9d85cd0dbc9a54b5947614738582c9558d1b027
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 19:23:10 2021 +0530
+
+    commiting html file
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git checkout .
+Updated 1 path from the index
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ ^C
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git config alias.my-add add
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ notepad index.html
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git my-add .
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git commit -m"last commit"
+[master aafb5cf] last commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git log
+commit aafb5cf56b30fb94570b1581471e8d105bc9d561 (HEAD -> master)
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:16:59 2021 +0530
+
+    last commit
+
+commit 58d82d892d7a37e83529104390c439759225786c
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:02:54 2021 +0530
+
+    recommit index
+
+commit a9d85cd0dbc9a54b5947614738582c9558d1b027
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 19:23:10 2021 +0530
+
+    commiting html file
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ ^C
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git revert aafb5cf56b30fb94570b1581471e8d105bc9d561
+[master ae6f44b] Revert "last commit"
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+bimahesh@LIN33005302 MINGW64 ~/project_dir (master)
+$ cd ..
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mkdir assignments
+mkdir: cannot create directory ‘assignments’: File exists
+
+bimahesh@LIN33005302 MINGW64 ~
+$ mkdir  git_assignments
+
+bimahesh@LIN33005302 MINGW64 ~
+$ cd git_assignments
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments
+$ touch README.txt
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments
+$ notepad README.txt
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments
+$ git add ,
+fatal: not a git repository (or any of the parent directories): .git
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments
+$ git init
+Initialized empty Git repository in C:/Users/bimahesh/git_assignments/.git/
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.txt
+
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git commit -m " readme commit"
+[master (root-commit) a8a4981]  readme commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git checkout -b html-assignments
+Switched to a new branch 'html-assignments'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ touch my.html
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git status
+On branch html-assignments
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        my.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ notepad my.html
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git commit -m "html git"
+[html-assignments a745d6e] html git
+ 1 file changed, 10 insertions(+)
+ create mode 100644 my.html
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git checkout br master
+error: pathspec 'br' did not match any file(s) known to git
+error: pathspec 'master' did not match any file(s) known to git
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git branch master
+fatal: A branch named 'master' already exists.
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git checkout master
+error: Your local changes to the following files would be overwritten by checkout:
+        my.html
+Please commit your changes or stash them before you switch branches.
+Aborting
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   my.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git add ,
+fatal: pathspec ',' did not match any files
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   my.html
+
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git commit -m "html change"
+[html-assignments d65b7fb] html change
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ notepad README.txt
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git commit
+[master 86658d4] need
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ notepad my.html
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git commit -m" changes myhtml"
+[html-assignments 8378e5d]  changes myhtml
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git merge html-assignments
+Merge made by the 'recursive' strategy.
+ my.html | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 my.html
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git log
+commit e2dffa825b0af066bdbe46b2465ec3850bf7b695 (HEAD -> master)
+Merge: 86658d4 8378e5d
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:48:37 2021 +0530
+
+    needed Merge branch 'html-assignments'
+
+commit 8378e5dca281be12c88ccbda2c2063f667b631d5 (html-assignments)
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:46:57 2021 +0530
+
+     changes myhtml
+
+commit 86658d41fc7c20c87bc2a80f3f3961c9e1c2fe37
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:44:42 2021 +0530
+
+    need
+
+commit d65b7fbbe059238f5b0311d6b9eec3850164bb2b
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:43:12 2021 +0530
+
+    html change
+
+commit a745d6e882293905e32bf4a4bec4ef88bbff8005
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:40:17 2021 +0530
+
+    html git
+
+commit a8a4981f202f73c2cb760517986d72be2c3c9498
+Author: Mahesh <maheshnani913@gmail.com>
+Date:   Mon Nov 8 20:33:19 2021 +0530
+
+     readme commit
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git branch -d html-assignments
+Deleted branch html-assignments (was 8378e5d).
+
+
+

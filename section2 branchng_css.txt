@@ -1,0 +1,99 @@
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git checkout -b css-assignment
+Switched to a new branch 'css-assignment'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ touch my.css
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ notepad my.css
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git commit -m "my css commit"
+[css-assignment ea1aea1] my css commit
+ 1 file changed, 21 insertions(+)
+ create mode 100644 my.css
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ touch README.txt
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ notepad README.txt
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git commit -m " chnges commit css"
+[css-assignment f11fcc3]  chnges commit css
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git checkout master
+Switched to branch 'master'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ notepad README.txt
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git commit -m "master change css"
+[master fefd748] master change css
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git checkout css-assignment
+Switched to branch 'css-assignment'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ notepad my.css
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git add .
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git commit -m "changes commit"
+[css-assignment 5598d70] changes commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (css-assignment)
+$ git checkout master
+Switched to branch 'master'
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git merge css-assignment
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master|MERGING)
+$ git branch -d css-assignment
+error: The branch 'css-assignment' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignment'.
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master|MERGING)
+$ git status
+
+
+
+
+
+
+
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master|MERGING)
+$ git commit -m "commit"
+[master b95eee7] commit
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git merge css-assignment
+Already up to date.
+
+bimahesh@LIN33005302 MINGW64 ~/git_assignments (master)
+$ git branch -d css-assignment
+Deleted branch css-assignment (was 5598d70).
